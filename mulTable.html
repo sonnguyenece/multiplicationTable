@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MulTable</title>
+</head>
+<body>
+<script>
+    let board,i,j='';
+    board="<table border=1'px' width='1000px' style='table-layout: fixed; text-align: center' cellspacing='0' cellpadding='2' >"
+    for(i=1;i<10;i++){
+        board+="<tr>";
+        for(j=1;j<10;j++){
+            board+='<td>'+j+'x'+i+'='+i*j+'</td>';
+        }
+        board+='</tr>';
+    }
+    board+='</table>'
+    document.write(board);
+</script>
+</body>
+</html>
